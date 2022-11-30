@@ -1,3 +1,4 @@
+/* ASIGNAMOS LAS FUENTES LOCALMENTE */
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans);
@@ -8,14 +9,7 @@
   src: url(../fonts/Lora/);
 }
 
-/* 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family:'Poppins', sans-serif; */
-/* } */
-
+/* CONFIGURACIÓN MENÚ NAVEGACIÓN RESPONSIVE*/
 *{
   padding: 0;
   margin: 0;
@@ -40,7 +34,19 @@ a.mainLogo{
   line-height: 80px;
   margin: 0 0 0 250px;
   padding: 0 100px;
-  font-weight: 400;  
+  font-weight: 400;
+}
+
+h1, h2, h3, h4{
+  font-family: "Lora", serif;
+  text-transform: lowercase;
+  letter-spacing: 0.25rem;
+  font-weight: lighter;
+  line-height: 1.2;
+}
+/* PREGUNTAR COMO SUMARLO CON LAS DEMAS ETIQUETAS (OPTIMIZACIÓN) */
+a.mainLogo:hover{
+  color: #c3a764;
 }
 
 nav ul{
@@ -60,6 +66,11 @@ nav ul li a{
   text-transform: uppercase;
 }
 
+nav ul li a:hover{
+  color: #c3a764;
+  text-decoration: underline #c3a764;
+}
+
 .checkbtn{
   font-size: 30px;
   color: black;
@@ -74,6 +85,112 @@ nav ul li a{
   display: none;
 }
 
+/* HERO SECTION */
+
+.gridhero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.colhero{
+/* background-color: red; */
+padding: 5%;
+flex: 1;
+
+}
+
+.colhero:nth-child(2){
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 100;
+}
+.colhero img {
+  width:100%;
+  padding-left: 0%;
+  
+}
+
+.colheroabout img{
+  width: 100%;
+  /* width:clamp(200px, 80%, 600px ); */
+  border-radius: 1%
+
+}
+
+.colheroabout{
+  display: block;
+  justify-content: flex;
+  align-items: center;
+  font-size: 2rem;
+  
+}
+
+.colheroabout p{
+    width: 100%;
+   display: contents;
+   justify-content:right;
+}
+
+.skills-table{
+  margin: 2% 20% 2% 20%;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  align-items: center;
+  
+}
+
+.skills-table i {
+  font-size: 40px;
+  text-align: center;
+  margin: 2% 20% 12% 20%;
+}
+
+.skills-table i p{
+  text-transform: uppercase;
+  font-size:small;
+  margin: 12px 0 0 0;
+}
+
+.skills-table i:hover{
+  color: #c3a764;
+}
+
+.notion{
+  
+
+  margin: 2% 20% 12% 20%;
+  height: 45px;
+  width: 45px;
+}
+
+.skills h1{
+  margin: 0 0 0 20%;
+}
+
+
+/* .herotext{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+} */
+
+footer{
+  background-color: lightgrey;
+}
+.col1foot{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  
+}
+
+/* MEDIA QUERY PARA BOTÓN  */
+
 @media (max-width: 952px) {
   label.logo{
     font-size: 30px;
@@ -83,6 +200,7 @@ nav ul li a{
     font-size: 16px;
   }
 }
+
 
 @media (max-width: 858px){
   .checkbtn{
