@@ -62,7 +62,7 @@ nav ul li{
 
 nav ul li a{
   color: black;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -87,16 +87,29 @@ nav ul li a:hover{
 
 /* HERO SECTION */
 
+section{
+  margin: 10px 10px 10px 10px;
+}
+
+
 .gridhero{
-  display: grid;
+  margin: 5% 5% 5% 5%;
+  /* display: grid; */
+  display: flex;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
 }
 
 .colhero{
 /* background-color: red; */
+/* margin: -50px; */
 padding: 5%;
 flex: 1;
 
+}
+
+.colherotext{
+  display: auto;
 }
 
 .colhero:nth-child(2){
@@ -108,30 +121,26 @@ flex: 1;
   font-weight: 100;
 }
 .colhero img {
-  width:100%;
+  width:90%;
   padding-left: 0%;
   
 }
 
-.colheroabout img{
+.colheroabout_left img{
   width: 100%;
   /* width:clamp(200px, 80%, 600px ); */
-  border-radius: 1%
-
+  border-radius: 2%;
+  margin: auto;
 }
 
-.colheroabout{
-  display: block;
-  justify-content: flex;
-  align-items: center;
+.colheroabout_right{
+  margin-left: 5%;
   font-size: 2rem;
   
 }
 
-.colheroabout p{
-    width: 100%;
-   display: contents;
-   justify-content:right;
+.colheroabout_right p{
+  font-size: 75%;
 }
 
 .skills-table{
@@ -152,12 +161,19 @@ flex: 1;
 }
 
 .skills-table i p{
+  font-family: "Font Awesome 6 Brands";
+  font-weight: bold;
+  color: black;
   text-transform: uppercase;
   font-size:small;
   margin: 12px 0 0 0;
 }
 
 .skills-table i:hover{
+  color: #c3a764;
+}
+
+.skills-table i p:hover{
   color: #c3a764;
 }
 
@@ -184,11 +200,16 @@ footer{
   background-color: lightgrey;
 }
 .col1foot{
-  display: grid;
+  display: inline;
   grid-template-columns: 25% 25% 25%;
   
 }
 
+/* .col2foot{
+  display: inline; 
+}
+ */
+ 
 /* MEDIA QUERY PARA BOTÓN  */
 
 @media (max-width: 952px) {
@@ -236,68 +257,4 @@ a:hover,:active{
 #check:checked ~ ul{
   left: 0;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #header > div {
-  width: 50%;
-} */
-
-/* .header-text{
-  margin-top: 20%;
-  font-size: 30px;
-}
-
-.header-text h1{
-  font-size: 60px;
-  margin-top: 20px;
-} */
-
-
-
-
-/* .principal {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#secundario {
-  background-image: url(./images/peces.jpg);
-  background-position: center;
-}
-
-
-.iam{
-  color: black;
-  font-size: 45px;
-  padding: 15px;
-  font-family: sans-serif;
-}
-.text{
-  color: white;
-  border-right: 2px solid black;
-  font-size: 45px;
-  color: rgb(0, 0, 0);
 }
