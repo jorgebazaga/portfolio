@@ -135,12 +135,13 @@ flex: 1;
 
 .colheroabout_right{
   margin-left: 5%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   
 }
 
 .colheroabout_right p{
   font-size: 75%;
+  margin-left: 5%;
 }
 
 .skills-table{
