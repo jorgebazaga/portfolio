@@ -24,7 +24,7 @@ body{
 
 nav{
   background-color: white;
-  height: 80px;
+  /* height: 80px; */
   width: 100%;
 }
 
@@ -32,8 +32,7 @@ a.mainLogo{
   color: black;
   font-size: 2.4rem;
   line-height: 80px;
-  margin: 0 0 0 250px;
-  padding: 0 100px;
+  margin: 0 0 0 10%;
   font-weight: 400;
 }
 
@@ -51,13 +50,13 @@ a.mainLogo:hover{
 
 nav ul{
   float: right;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 nav ul li{
   display: inline;
   line-height: 80px;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav ul li a{
@@ -88,7 +87,7 @@ nav ul li a:hover{
 /* HERO SECTION */
 
 section{
-  margin: 10px 10px 10px 10px;
+  margin: 2% 2% 2% 2%;
 }
 
 
@@ -100,28 +99,27 @@ section{
   grid-template-columns: 1fr 1fr;
 }
 
-.colhero{
-/* background-color: red; */
-/* margin: -50px; */
+.colhero_pic{
 padding: 5%;
 flex: 1;
 
 }
 
-.colherotext{
+.colhero_text{
   display: auto;
 }
 
 .colhero:nth-child(2){
-  /* background-color: yellow; */
+  background-color: yellow;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 60px;
   font-weight: 100;
 }
+
 .colhero img {
-  width:90%;
+  width:100%;
   padding-left: 0%;
   
 }
@@ -146,7 +144,6 @@ flex: 1;
 
 .skills-table{
   margin: 2% 20% 2% 20%;
-  /* background-color: aqua; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -156,9 +153,9 @@ flex: 1;
 }
 
 .skills-table i {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
-  margin: 2% 20% 12% 20%;
+  margin: 5% 20% 12% 2%;
 }
 
 .skills-table i p{
@@ -170,6 +167,15 @@ flex: 1;
   margin: 12px 0 0 0;
 }
 
+.socials i{
+  margin: 5% 0% 5% 5%;
+  color: black;
+}
+
+.socials i:hover{
+  color: #c3a764;
+}
+
 .skills-table i:hover{
   color: #c3a764;
 }
@@ -179,8 +185,6 @@ flex: 1;
 }
 
 .notion{
-  
-
   margin: 2% 20% 12% 20%;
   height: 45px;
   width: 45px;
@@ -196,6 +200,23 @@ flex: 1;
   justify-content: center;
   align-items: top;
 } */
+.travel{
+  margin: 0 0 0 20%;
+}
+
+.pics{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.pics img{
+  width: 20%;
+  margin:1% ;
+  border-radius: 2%;
+}
+
+
 
 footer{
   background-color: lightgrey;
@@ -216,7 +237,7 @@ footer{
 @media (max-width: 952px) {
   label.logo{
     font-size: 30px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   nav ul li a{
     font-size: 16px;
@@ -229,7 +250,7 @@ footer{
     display: block;
   }
   a.mainLogo{
-    margin: 0 0 0 50px;
+    margin: 0 0 0 20%;
   }
   ul{
     position: fixed;
