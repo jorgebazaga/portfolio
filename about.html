@@ -12,12 +12,13 @@
     <link href="./fontawesome/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Esta sería nuestra barra de navegación -->
     <div class="Nav">
       <nav class="mainNav">
-        <div class="wrapper">
           <input type="checkbox" id="check" />
           <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
@@ -28,24 +29,23 @@
             <li><a href="./work.html">Work</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+          </ul>        
       </nav>
     </div>
     <!-- Aquí finaliza nuestra barra de navegación -->
     <section>
       <div class="gridhero">
-        <div class="colheroabout_left">
+        <div class="colheroabout_left" data-aos="fade-right" data-aos-duration="1000">
           <img src="./images/peces.jpg" alt="hero" />
-        </div>
-        <div class="colheroabout_right">
+        </div>        
+        <div class="colheroabout_right" data-aos="fade-left" data-aos-duration="1000">
           <h1>hi, i'm jorge!</h1>
           <p>
             I am a front-end developer student at CPIFP Málaga Tech Park, who is
             passionate about tech and self-development. 
             <div class="socials">
-              <a href="https://github.com/jorgebazaga"><i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/jorge-bazaga-sarmiento"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/jorgebazaga" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/jorge-bazaga-sarmiento" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </p>
         </div>
@@ -54,7 +54,7 @@
       <br />
     </section>
     <section>
-      <div class="skills">
+      <div class="skills" data-aos="zoom-in" data-aos-duration="1000">
         <h1>skills</h1>
         <div class="skills-table">
           <i class="fa-brands fa-html5"><p>html</p></i>
@@ -72,9 +72,9 @@
         </div>
       </div>
     </section>
-    <section>
-      <h1 class="travel">some pics of my travels</h1>
-      <div class="pics">        
+    <section class="travel">
+      <h1 >some pics of my travels</h1>
+      <div class="pics" data-aos="fade-up" data-aos-duration="1000">        
         <img src="./images/hotel.jpg">
         <img src="./images/trenvienna.jpg">
         <img src="./images/escaleras.jpg">
@@ -84,4 +84,8 @@
     </section>
   
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

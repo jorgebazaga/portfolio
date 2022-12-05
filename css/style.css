@@ -87,46 +87,60 @@ nav ul li a:hover{
 /* HERO SECTION */
 
 section{
-  margin: 2% 2% 2% 2%;
+  margin: 2% 2% 2% 0%;
 }
 
 
 .gridhero{
-  margin: 5% 5% 5% 5%;
-  /* display: grid; */
+  margin: 5% 0% 5% 5%;
   display: flex;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
 
-.colhero_pic{
-padding: 5%;
-flex: 1;
-
+.colhero_pic img{
+  width: 80%;
+  border-radius: 2%;  
 }
 
-.colhero_text{
-  display: auto;
+.colhero_text {
+  font-size: 4rem;
+  position: relative;
+  left: -25%;
+  margin-bottom: 15px;
 }
 
-.colhero:nth-child(2){
+
+
+
+
+.wrapper , .wrapper h1{
+  text-align: center;  
+  margin-bottom: 1%;
+}
+
+.wrapper a{
+  color: #c3a764;
+  text-transform: uppercase;
+  /* line-height: 1.5; */
+}
+/* .colhero:nth-child(2){
   background-color: yellow;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 60px;
   font-weight: 100;
-}
+} */
 
-.colhero img {
+/* .colhero img {
   width:100%;
   padding-left: 0%;
   
-}
+} */
 
 .colheroabout_left img{
   width: 100%;
-  /* width:clamp(200px, 80%, 600px ); */
   border-radius: 2%;
   margin: auto;
 }
@@ -172,15 +186,7 @@ flex: 1;
   color: black;
 }
 
-.socials i:hover{
-  color: #c3a764;
-}
-
-.skills-table i:hover{
-  color: #c3a764;
-}
-
-.skills-table i p:hover{
+.socials i:hover, .skills-table i:hover, .skills-table i p:hover{
   color: #c3a764;
 }
 
@@ -200,9 +206,12 @@ flex: 1;
   justify-content: center;
   align-items: top;
 } */
-.travel{
-  margin: 0 0 0 20%;
+.travel h1{
+  margin: 5% 0 2% 20%;
 }
+
+
+
 
 .pics{
   display: flex;
