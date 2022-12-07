@@ -17,8 +17,8 @@
   </head>
   <body>
     <!-- Esta sería nuestra barra de navegación -->
-    <div class="Nav">
-      <nav class="mainNav">
+    <div>
+      <nav class="menu">
           <input type="checkbox" id="check" />
           <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
@@ -67,20 +67,26 @@
           <i class="fa-brands fa-windows"><p>windows</p></i>
           <i class="fa-solid fa-terminal"><p>sysadmin</p></i>
           <i class="devicon-bash-plain colored"><p>bash</p></i>
-          <object class="notion" data="./fontawesome/notion-logo.svg"></object>
           <i class="fa-solid fa-database"><p>databases</p></i>
         </div>
       </div>
     </section>
-    <section class="travel">
+    <section class="travel"  data-aos="fade-up" data-aos-duration="1000">
       <h1 >some pics of my travels</h1>
-      <div class="pics" data-aos="fade-up" data-aos-duration="1000">        
+      <div class="row">
+      <div class="pics">        
         <img src="./images/hotel.jpg">
-        <img src="./images/trenvienna.jpg">
-        <img src="./images/escaleras.jpg">
-        <img src="./images/banco.jpg">
-      
       </div>
+      <div class="pics">
+        <img src="./images/trenvienna.jpg">
+      </div>
+      <div class="pics"> 
+        <img src="./images/escaleras.jpg">
+      </div>
+      <div class="pics"> 
+        <img src="./images/banco.jpg">
+      </div>
+    </div>
     </section>
   
   </body>
