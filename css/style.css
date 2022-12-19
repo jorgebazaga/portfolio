@@ -83,14 +83,303 @@ a.mainLogo:hover{
   text-decoration: underline #c3a764;
 }
 
-footer{
-  background-color: lightgrey;
-} 
 
-footer.menu{
-  background-color: lightgray;
+/* aquí empieza el footer */
+.footer-distributed{
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+	background: lightgray;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerLogo{
+  font-family: Lora;
+  color: black;
+  font-size: 2.4rem;
+  line-height: 80px;
+  margin-left:0%;
+  font-weight: 400;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  black;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  black;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 
 }
+/* aquí termina el footer */
+
+/* empieza barra de progreso */
+
+.languages h1{
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
+.progress {
+  margin: 25px 0;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.title h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.barline {
+  height: 12px;
+  background: #c8d6e5;
+  border-radius: 20px;
+}
+
+.countbar {
+  height: 12px;
+  background: #c3a764;
+  /* background: #5f27cd; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+}
+.countbar h3 {
+  color: white;
+  position: absolute;
+  right: -19px;
+  top: -35px;
+  background: black;
+  /* background: #34495e; */
+  padding: 4px 6px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.countbar h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  /* background: #34495e; */
+  background: black;
+  transform: rotate(45deg) translateX(-60%);
+}
+/* termina barra de progreso */
+
+/* empieza texto dinámico */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+    
+    .morph{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+        
+    #container {
+      /* Center the text in the viewport. */
+      position: relative;
+      margin: auto;
+      /* width: 100vw; */
+      height: 80pt;
+      top: 0;
+      bottom: 0;
+      
+      /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+      filter: url(#threshold) blur(0.6px);
+    }
+    
+    /* Your average text styling */
+    #text1, #text2 {
+      position: absolute;
+      /* margin: auto; */
+      width: 100%;
+      display: inline-block;
+      
+      font-family: 'Raleway', sans-serif;
+      font-size: 10vh;
+      
+      text-align: center;
+      user-select: none;
+    }
+/* termina texto dinamico */
 
 .checkbtn{
   font-size: 30px;
@@ -222,6 +511,64 @@ section{
 }
 
 
+
+
+
+form{
+  background-color: c3a764;
+  max-width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5em 1em;
+}
+
+.form_container{
+  background-color: #C3A764;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+  border-radius: 1em;
+  padding:1em;
+  
+}
+
+.form_container h2{
+  font-size: xx-large;
+  text-align: center;
+  margin: 0 2% 0 2%;
+  padding:0.5em;
+}
+
+.form_input{
+  font-family: OpenSans;
+  font-size: 1rem;
+  padding: .8em 1em;
+  outline: none;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.form_input--message{
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: .5em;
+}
+
+.form_cta{
+  font-family: Lora;
+  background-color : #089fe0;
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  padding: .7em 0;
+  border-radius: .2em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 /* .herotext{
   display: flex;
   justify-content: center;
@@ -282,17 +629,18 @@ section{
 
 @media (max-width: 858px){
   .checkbtn{
-    display: block;
+    display: block;    
   }
   a.mainLogo{
     margin: 0 0 0 10%;
   }
   .navLink{
     position: fixed;
+    z-index: 100;
     width: 100%;
     height: 100vh;
     background: white;
-    top: 80px;
+    /* top: 80px; */
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -302,6 +650,10 @@ section{
 .menu .navLink li{
   display: block;
   margin: 50px 0;
+}
+.menu{
+
+  width: 100%;
 }
 nav ul li a{
   font-size:20px;
@@ -331,10 +683,12 @@ a:hover,:active{
 .skills h1{
   margin-left: 5%;
 }
+
+
 .skills-table{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin: 3% 5% 2% 8%;
+  margin: 3% 5% 20% 8%;
   /* grid-column-gap: 20px; */
   
 }
@@ -344,7 +698,19 @@ a:hover,:active{
   max-width: 50%;
 }
 
+.languages h1{
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
 
 
+form{
+  padding: 3.5em ;
+}
+
+.footer-distributed{
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
 
 }

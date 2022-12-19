@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 50%;
+        margin: 0 auto;
+      }
+      .progress {
+        margin: 25px 0;
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+      }
+      .title h3 {
+        font-size: 25px;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+      .barline {
+        height: 12px;
+        background: #c8d6e5;
+        border-radius: 20px;
+      }
+
+      .countbar {
+        height: 12px;
+        background: #5f27cd;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+      }
+      .countbar h3 {
+        position: absolute;
+        right: -19px;
+        top: -35px;
+        background: #34495e;
+        padding: 4px 6px;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 5px;
+      }
+      .countbar h3::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 11px;
+        height: 11px;
+        background: #34495e;
+        transform: rotate(45deg) translateX(-60%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="progress">
+        <div class="title">
+          <h3>web design</h3>
+        </div>
+        <div class="barline">
+          <div class="countbar" data-percentnumber="90"></div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="title">
+          <h3>web developer</h3>
+        </div>
+        <div class="barline">
+          <div class="countbar" data-percentnumber="40"></div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="title">
+          <h3>graphice design</h3>
+        </div>
+        <div class="barline">
+          <div class="countbar" data-percentnumber="65"></div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="title">
+          <h3>digital marketing</h3>
+        </div>
+        <div class="barline">
+          <div class="countbar" data-percentnumber="80"></div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="title">
+          <h3>javarscript</h3>
+        </div>
+        <div class="barline">
+          <div class="countbar" data-percentnumber="20"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/progress.js"></script>
+</html>
