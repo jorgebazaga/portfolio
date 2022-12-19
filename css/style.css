@@ -383,6 +383,22 @@ section{
 
 /* termina hero section */
 
+/* empieza wrapper */
+.wrapper{
+  margin: 0 0 6% 0;
+}
+
+.wrapper h1{  
+  margin: 6% 0 2% 20%; 
+}
+
+.wrapper a{
+  color: #c3a764;
+  text-transform: uppercase;
+  margin-left: 25%;
+}
+/* termina wrapper */
+
 /* empieza tabla skills */
 
 .skills-table{
@@ -723,15 +739,19 @@ form{
   .main {
     width: 75%;
     margin: 0 auto;
-  }
-  
-  .languages{
-    margin-bottom: 20%;
-  }
+  }  
 
   .languages h1{
     margin-left: 5%;
     margin-bottom: 2%;
+  } 
+
+  .wrapper h1{  
+    margin-left:5% ;
+  }
+
+  .wrapper a{
+    margin-left: 10%;
   }
 
   form{
