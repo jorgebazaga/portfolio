@@ -5,26 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | Jorge Bazaga </title>
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!--  empieza favicon dinámico -->
+  <link rel="icon" type="image/png" sizes ="50x50" href="./images/favicon_white.png" data-href-light="./images/favicon_black.png" data-href-dark="./images/favicon_white.png">
+  <script>
+      (function(){if("not-all"!==window.matchMedia("(prefers-color-scheme").media){var a=window.matchMedia("(prefers-color-scheme: dark)"),d=document.querySelectorAll('link[rel="icon"]'),c=function(){var e=a.matches?"hrefDark":"hrefLight";Array.prototype.slice.call(d).forEach(function(b){b.href=b.dataset[e]})};a.addEventListener("change",c);c()}})();
+  </script>
+  <!-- termina favicon dinamico -->
+  <!-- empieza fontawesome -->
+  <link href="./fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./fontawesome/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- termina fontawesome -->
+  <!-- iconos para developers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+      <!-- animaciones -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 </head>
 <body id="contact">
+<!-- empieza la barra de navegación -->
   <div>
     <nav class="menu">
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
         </label>
-        <a class="mainLogo" href="./index.html">jb.</a>
+        <a class="mainLogo" href="/">jb.</a>
         <ul class="navLink">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./work.html">Work</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./work.html">Work</a></li>
+          <!-- <li><a href="./about.html">About</a></li> -->
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>        
     </nav>
-</div>
-<form action="https://formspree.io/f/xwkjelbr" method="POST">  
-  <div class="form_container">
+  </div>
+<!-- finaliza la barra de navegación -->
+<form action="https://formspree.io/f/xwkjelbr" method="POST">
+  <div class="form_container" data-aos="zoom-in" data-aos-duration="1000">
     <h2 class="form_container">Contact me</h2>
     <input type="text" class="form_input" placeholder="Full Name" name="name">
     <input type="email" class="form_input" placeholder="Email" name="email">
@@ -33,5 +53,63 @@
     <input type="submit" value="submit" class="form_cta">
   </div>
 </form>
+<footer class="footer-distributed contact">
+
+  <div class="footer-left">
+
+      <a class="footerLogo" href="/">jb.</a>
+
+      <p class="footer-links">
+          
+          <a href="./index.html">home</a>
+      
+          <a href="./work.html">work</a>             
+          
+          <a href="./contact.html">contact</a>
+          
+          
+      </p>
+
+      <p class="footer-company-name">© 2022 JORGE BAZAGA SARMIENTO</p>
+  </div>
+
+  <div class="footer-center">
+
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Málaga</span> Andalusia, Spain</p>
+      </div>
+
+      <div>
+          <i class="fa fa-linkedin-square"></i>
+          <p><a href="https://linkedin.com/in/jorge-bazaga-sarmiento/" target="blank">Jorge Bazaga Sarmiento</a></p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:dev.jorgebazaga@gmail.com">dev.jorgebazaga@gmail.com</a></p>
+      </div>
+
+  </div>
+
+  <div class="footer-right">
+
+      <p class="footer-company-about">
+          <span>About</span>
+          Web page designed with HTML, CSS and JS and with some snipetts of codepen 
+      </p>
+
+      <div class="footer-icons">              
+          
+          <a href="https://www.linkedin.com/in/jorge-bazaga-sarmiento" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/jorgebazaga" target="_blank"><i class="fa fa-github"></i></a>
+
+      </div>
+
+  </div>
+
+</footer>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init(); </script>   
 </html>

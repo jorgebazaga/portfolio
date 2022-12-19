@@ -23,14 +23,4 @@
     mediaQuery.addEventListener('change', updateIcon);
     updateIcon();
   })();
-
-
-
-
-var typing =new Typed(".text", {
-        strings: ["","Programador", "Desarrollador", "Desarrollador de Software", "Desarrollador Web"], 
-        typeSpeed: 100,
-        backSpeed: 40,
-        loop: true,
-    
-    });
+ç

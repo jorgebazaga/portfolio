@@ -4,202 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" sizes ="50x50" href="./images/favicon_white.png" data-href-light="./images/favicon_black.png" data-href-dark="./images/favicon_white.png">
-    <!--  favicon dinámico -->
-    <script>
-        (function(){if("not-all"!==window.matchMedia("(prefers-color-scheme").media){var a=window.matchMedia("(prefers-color-scheme: dark)"),d=document.querySelectorAll('link[rel="icon"]'),c=function(){var e=a.matches?"hrefDark":"hrefLight";Array.prototype.slice.call(d).forEach(function(b){b.href=b.dataset[e]})};a.addEventListener("change",c);c()}})();
-    </script>
   <title>Work | Jorge Bazaga</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!--  empieza favicon dinámico -->
+  <link rel="icon" type="image/png" sizes ="50x50" href="./images/favicon_white.png" data-href-light="./images/favicon_black.png" data-href-dark="./images/favicon_white.png">
+  <script>
+      (function(){if("not-all"!==window.matchMedia("(prefers-color-scheme").media){var a=window.matchMedia("(prefers-color-scheme: dark)"),d=document.querySelectorAll('link[rel="icon"]'),c=function(){var e=a.matches?"hrefDark":"hrefLight";Array.prototype.slice.call(d).forEach(function(b){b.href=b.dataset[e]})};a.addEventListener("change",c);c()}})();
+  </script>
+  <!-- termina favicon dinamico -->
+  <!-- empieza fontawesome -->
+  <link href="./fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./fontawesome/css/solid.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- termina fontawesome -->
+  <!-- iconos para developers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+      <!-- animaciones -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
   
-  <style>
-  
-  body {
-  background-color: #c3a764;
-  /* background-color: #474e5d; */
-
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.dekra{
-  color: #3FCC88;
-  font-weight:bold;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #5c4b24;
-  /* border: 4px solid #FF9F55; */
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-.content h2{
-  font-size: xx-large;
-}
-
-.content p {
-  font-size:x-large;
-}
-
-.content a{
-  margin-left: 5%;
-  font-size: large;
-    color: green;
-}
-
-.content ul li{
-  list-style-type:disc;
-  margin-left: 5%;
-  font-size: large;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-/* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-/* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-</style>
 </head>
-<body>
-  <!-- barra de navegación -->
+<body id="work">
+<!-- empieza la barra de navegación -->
 <div>
   <nav class="menu">
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-              <i class="fa fa-bars"></i>
-          </label>
-          <a class="mainLogo" href="/">jb.</a>
-          <ul class="navLink">
-              <li><a href="/">Home</a></li>
-              <li><a href="./work.html">Work</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <a class="mainLogo" href="/">jb.</a>
+      <ul class="navLink">
+        <li><a href="/">Home</a></li>
+        <li><a href="./work.html">Work</a></li>
+        <!-- <li><a href="./about.html">About</a></li> -->
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>        
   </nav>
 </div>
+<!-- finaliza la barra de navegación -->
 
 <!-- Aquí empieza el timeline -->
 <div class="timeline">
-  <div class="container left">
+  <div class="container left" data-aos="fade-right">
     <div class="content">
       <h2><strong>2019</strong></h2>
       <p>I begin to study some IT concepts by myself, because I always been interested in computers and i was pursuing to work in the tech sector. </p>
     </div>
   </div>
-  <div class="container right">
+  <div class="container right" data-aos="fade-left">
     <div class="content">
       <h2><strong>2020</strong></h2>
       <p>I started a degree of IT in called Micro Systems and Networking at I.E.S Bezmiliana (Rincón de la Victoria).
@@ -211,7 +64,7 @@
         <ul><li>IT Essentials (Cisco Certificate)</li></ul> 
     </div>
   </div>
-  <div class="container left">
+  <div class="container left" data-aos="fade-right">
     <div class="content">
       <h2><strong>2022</strong></h2>
       <p>I had my first experience working. I started my internship at <span class="dekra">DEKRA DIGITAL</span> at the age of 17. Some technologies I used were:</p>
@@ -220,7 +73,7 @@
       <ul><li>Oracle Database</li></ul> 
     </div>
   </div>
-  <div class="container right">
+  <div class="container right" data-aos="fade-left">
     <div class="content">
       <h2><strong>2022</strong></h2>
       <p>Now I'm studying front-end development at CPIFP Málaga Tech Park</p> <a href="./about.html">Learn more</a>     
@@ -237,12 +90,10 @@
           
           <a href="./index.html">home</a>
       
-          <a href="./work.html">work</a>
-      
-          <a href="./about.html">about</a>
+          <a href="./work.html">work</a>             
           
           <a href="./contact.html">contact</a>
-          <a></a>
+          
           
       </p>
 
@@ -271,16 +122,14 @@
   <div class="footer-right">
 
       <p class="footer-company-about">
-          <span>About the company</span>
-          
+          <span>About</span>
+          Web page designed with HTML, CSS and JS and with some snipetts of codepen 
       </p>
 
-      <div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+      <div class="footer-icons">              
+          
+          <a href="https://www.linkedin.com/in/jorge-bazaga-sarmiento" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/jorgebazaga" target="_blank"><i class="fa fa-github"></i></a>
 
       </div>
 
@@ -288,4 +137,6 @@
 
 </footer>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init(); </script>  
 </html>
